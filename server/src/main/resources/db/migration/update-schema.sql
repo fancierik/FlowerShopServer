@@ -1,0 +1,56 @@
+ALTER TABLE cart12
+DROP
+CONSTRAINT fk_cart_on_idgod;
+
+ALTER TABLE cart12
+DROP
+CONSTRAINT fk_cart_on_idorder;
+
+DROP TABLE cart12 CASCADE;
+
+ALTER TABLE "user"
+DROP
+COLUMN date_of_birth;
+ALTER TABLE "order"
+    DROP COLUMN id;
+
+ALTER TABLE "order"
+    ADD id INTEGER NOT NULL PRIMARY KEY;
+
+ALTER TABLE cart
+    DROP COLUMN idorder;
+
+ALTER TABLE cart
+    ADD idorder INTEGER;
+
+ALTER TABLE cart
+    ADD CONSTRAINT FK_CART_ON_IDORDER FOREIGN KEY (idorder) REFERENCES "order" (id);
+ALTER TABLE "order"
+    DROP COLUMN id;
+
+ALTER TABLE "order"
+    ADD id INTEGER NOT NULL PRIMARY KEY;
+
+ALTER TABLE cart
+    DROP COLUMN idorder;
+
+ALTER TABLE cart
+    ADD idorder INTEGER;
+
+ALTER TABLE cart
+    ADD CONSTRAINT FK_CART_ON_IDORDER FOREIGN KEY (idorder) REFERENCES "order" (id);
+ALTER TABLE "order"
+    DROP COLUMN id;
+
+ALTER TABLE "order"
+    ADD id INTEGER NOT NULL PRIMARY KEY;
+
+ALTER TABLE cart
+    DROP COLUMN idorder;
+
+ALTER TABLE cart
+    ADD idorder INTEGER;
+
+ALTER TABLE cart
+    ADD CONSTRAINT FK_CART_ON_IDORDER FOREIGN KEY (idorder) REFERENCES "order" (id);
+

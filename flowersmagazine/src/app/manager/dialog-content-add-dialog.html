@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Cделать заявку на добвление товара</h1>
+<div mat-dialog-content>
+  <p>Добавить товар:</p>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Название</mat-label>
+    <input name="name" [(ngModel)]="name" matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Описание</mat-label>
+    <input  name="description" [(ngModel)]="description" matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Цена</mat-label>
+    <input name="price" [(ngModel)]="price" matInput>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close style="margin-left: 25%" color="primary" cdkFocusInitial (click)="Add()">подтвердить</button>
+</div>
