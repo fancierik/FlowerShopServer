@@ -14,3 +14,4 @@
 
 <p align="center" >Рисунок 2.1 - Скриншот полученной страницы</p>
 
+<img src="https://drive.google.com/uc?export=view&id=1a87nwiu7OHdnzZY8DQbHWPnMSLMOf_68" />
